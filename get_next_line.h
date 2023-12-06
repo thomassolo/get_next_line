@@ -6,7 +6,7 @@
 /*   By: tsoloher <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 10:10:36 by tsoloher          #+#    #+#             */
-/*   Updated: 2023/11/27 16:27:13 by tsoloher         ###   ########.fr       */
+/*   Updated: 2023/11/29 13:04:36 by solo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <sys/types.h>
-# include <sys/uio.h>
 char *get_next_line(int fd);
 size_t	ft_strlen(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);

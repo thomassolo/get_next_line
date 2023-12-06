@@ -6,7 +6,7 @@
 /*   By: jdecorte <jdecorte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 11:09:06 by jdecorte          #+#    #+#             */
-/*   Updated: 2023/11/27 16:41:16 by tsoloher         ###   ########.fr       */
+/*   Updated: 2023/12/04 13:43:50 by solo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_free(char *buffer, char *buf)
 	char	*temp;
 
 	temp = ft_strjoin(buffer, buf);
-	free(buffer);
+		free(buffer);
 	return (temp);
 }
 
@@ -58,7 +58,9 @@ char	*ft_line(char *buffer)
 		return (NULL);
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
-	line = ft_calloc(i + 2, sizeof(char));
+	if (buffer[i] == '\n')
+		i++;
+	line = ft_calloc(i + 1, sizeof(char));
 	i = 0;
 	while (buffer[i] && buffer[i] != '\n')
 	{

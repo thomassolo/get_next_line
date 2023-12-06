@@ -6,7 +6,7 @@
 /*   By: tsoloher <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 10:30:56 by tsoloher          #+#    #+#             */
-/*   Updated: 2023/11/27 14:01:17 by tsoloher         ###   ########.fr       */
+/*   Updated: 2023/12/04 13:44:55 by solo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
 	int		size_total;
 	char	*join;
