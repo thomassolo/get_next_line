@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsoloher <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/27 10:30:56 by tsoloher          #+#    #+#             */
-/*   Updated: 2023/12/04 13:44:55 by solo             ###   ########.fr       */
+/*   Created: 2023/12/07 14:39:43 by tsoloher          #+#    #+#             */
+/*   Updated: 2023/12/09 12:39:25 by tsoloher         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		i++;
 	}
@@ -47,9 +47,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		join[i] = s2[j];
 		i++;
 		j++;
-		
 	}
-	join[size_total] = 0;
 	return (join);
 }
 
